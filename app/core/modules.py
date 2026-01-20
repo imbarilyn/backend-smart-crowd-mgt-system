@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 from fastapi import FastAPI
 from app.api.routes.main_router import router
+
+
 def init_routers(app_: FastAPI) -> None:
     app_.include_router(router)
 
